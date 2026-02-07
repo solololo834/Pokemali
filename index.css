@@ -1,0 +1,59 @@
+.vid {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  gap: 40px;
+  animation: slide 2s ease-in-out infinite alternate ;
+}
+
+.vid:hover {
+  transform: scale(1.2);
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(3000px);
+  }
+}
+
+@keyframes throwball {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
+}
+
+#ball {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  left: 175px;
+  top: 200px;
+  animation: infinite alternate 2s throwball ease-in-out;
+}
+
+button {
+  padding: 10px 14px;
+  background-color: skyblue;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 3px 3px black;
+}
+
+button:hover {
+  transform: translate(3px 3px);
+  box-shadow: 0 0;
+  transition: all 200ms ease;
+}
+
+#clicks {
+  position: relative;
+  top: 450px;
+  z-index: -1;
+  font-size: 200px;
+} 
